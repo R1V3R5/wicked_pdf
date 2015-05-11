@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'wicked_pdf/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'wicked_pdf_r1v3r5'
+  spec.name          = 'wicked_pdf'
   spec.version       = WickedPdf::VERSION
   spec.authors       = ['Miles Z. Sterrett, Joshua Rivers']
   spec.email         = 'joshua.rivers@gmail.com'
