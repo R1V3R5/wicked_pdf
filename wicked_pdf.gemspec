@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'wicked_pdf/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'wicked_pdf'
+  spec.name          = 'wicked_pdf_r1v3r5'
   spec.version       = WickedPdf::VERSION
-  spec.authors       = ['Miles Z. Sterrett']
-  spec.email         = 'miles.sterrett@gmail.com'
+  spec.authors       = ['Miles Z. Sterrett, Joshua Rivers']
+  spec.email         = 'joshua.rivers@gmail.com'
   spec.summary       = 'PDF generator (from HTML) gem for Ruby on Rails'
-  spec.homepage      = 'https://github.com/mileszs/wicked_pdf'
+  spec.homepage      = 'https://github.com/R1V3R5/wicked_pdf'
   spec.license       = 'MIT'
   spec.date          = Time.now.strftime('%Y-%m-%d')
 
@@ -28,5 +28,7 @@ Gem::Specification.new do |spec|
 Wicked PDF uses the shell utility wkhtmltopdf to serve a PDF file to a user from HTML.
 In other words, rather than dealing with a PDF generation DSL of some sort,
 you simply write an HTML view as you would normally, and let Wicked take care of the hard stuff.
+
+This version has been modified by Joshua Rivers.
 desc
 end
