@@ -24,9 +24,12 @@ rescue LoadError
 end
 
 require 'wicked_pdf/version'
-require 'wicked_pdf/railtie'
+# require 'wicked_pdf/railtie'
 require 'wicked_pdf/tempfile'
 require 'wicked_pdf/middleware'
+require 'wicked_pdf/pdf_helper'
+require 'wicked_pdf/wicked_pdf_helper'
+
 
 class WickedPdf
   DEFAULT_BINARY_VERSION = Gem::Version.new('0.9.9')
@@ -332,6 +335,6 @@ class WickedPdf
       nil
     end
     exe_path ||= possible_locations.map { |l| File.expand_path("#{l}/#{EXE_NAME}") }.find { |location| File.exist?(location) }
-    exe_path || ''
-  end
-end
+                                                      exe_path || ''
+                                                      end
+                                                      end
